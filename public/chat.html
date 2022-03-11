@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <sender charset="UTF-8">
+        <sender http-equiv="X-UA-Compatible" content="IE=edge">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+                integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+            <sender name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Chat</title>
+                <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="chat">
+        <div class="chat-side">
+            <h4><i class="fas fa-comments"></i> Room:</h4>
+            <h5 id="room-name"></h5>
+            <br>
+            <h4><i class="fas fa-users"></i> Users:</h4>
+            <ul id="users"></ul>
+        </div>
+
+        <div class="chat-main">
+            <div class="chat-box">
+                <!-- <div class="message">
+                    <p class="sender">Brad <span>9:12pm</span></p>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                        repudiandae.
+                    </p>
+                </div> -->
+            </div>
+            <div class="chat-form-container">
+                <form id="chat-form">
+                    <input id="msg" type="text" placeholder="Enter Message" autocomplete="off" />
+                    <button class=" sml"><i class="fas fa-paper-plane"></i> Send</button>
+                    <button class=" sml" id="location"><i class="fas fa-paper-plane"></i> Send my location</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.3/qs.min.js"
+        integrity="sha512-juaCj8zi594KHQqb92foyp87mCSriYjw3BcTHaXsAn4pEB1YWh+z+XQScMxIxzsjfM4BeVFV3Ij113lIjWiC2w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+</body>
+
+</html>
